@@ -1,0 +1,91 @@
+title = "post"
+url = "/post/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "home"
+==
+<div class="container detail-card">
+  <div class="px-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb px-0">
+        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>
+      </ol>
+    </nav>
+    <h1 class="h h_1 h_primary mb-4 mb-md-5">{{ post.title }}</h1>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12 col-md-12 offset-md- house__col-12">
+      {% if post.featured_images.count %}
+      <div class="owl-carousel owl-theme carousel">
+        {% for post_image in post.featured_images %}
+          <div class="px-md-4"><img src="{{post_image.path}}" alt=""></div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="row my-4 my-md-5">
+    <div class="col-12 col-md-6 text-center mb-4">
+      <img src="{{post.preview_image_2.path}}" class="img-fluid" alt="">
+    </div>
+    <div class="col-12 col-md-6">
+
+      <div class="row">
+        <div class="col-12 order-md-2 mb-3 mb-md-0">
+          <div class="row">
+
+            {% if post.house_area %}
+            <div class="col-xs-6 col-md-12">
+              <div class="row house__trigger-row">
+                <div class="col-3 col-sm-4 col-md-3 col-lg-2 d-flex"><img src="img/ploshad.svg" alt=""
+                                                                          class="img-fluid house__trigger-img">
+                </div>
+                <div class="col house__trigger-text">
+                  Площадь
+                  <div class="house__digit">{{post.house_area}} кв. м</div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+            {% if post.plottage %}
+            <div class="col-xs-6 col-md-12">
+              <div class="row house__trigger-row">
+                <div class="col-3 col-sm-4 col-md-3 col-lg-2 d-flex"><img src="img/list.svg" alt=""
+                                                                          class="img-fluid house__trigger-img">
+                </div>
+                <div class="col house__trigger-text">
+                  Участок
+                  <div class="house__digit">{{post.plottage}} сот.</div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-12 order-md-1">
+          <div class="detail-card__characteristics">
+
+            {{post.content | md | raw}}
+          </div>
+        </div>
+        <div class="col-12 order-md-3">
+        {% if false %}
+          <div class="h h_1 h_primary detail-card__price my-3">
+            {% if post.price %}
+            <span style="font-size: .5em">от</span> {{post.price}} ₽
+            {% endif %}
+          </div>
+          {% endif %}
+          {# <a data-toggle="modal" data-target="#ctaModal" class="btn btn-primary btn-lg">Забронировать дом</a> #}
+          <a data-toggle="modal" data-target="#ctaModal" class="btn btn-primary btn-lg mt-5">Узнать цену</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

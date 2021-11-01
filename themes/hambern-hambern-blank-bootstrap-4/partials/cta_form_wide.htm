@@ -1,0 +1,26 @@
+==
+<div class="tertiary cta-form py-5">
+  <form class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="h h_2 text-center mb-4 cta-form__title">{{title|default("Есть вопросы? Задайте их нашим специалистам")}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-md-flex my-md-3">
+        <input type="text" name="fio" class="cta-form__input-text fio" placeholder="Иванов Иван">
+        <input type="tel" class="cta-form__input-text phone" name="phone" placeholder="+7 (912) 345-67-89">
+      </div>
+    </div>
+    <div class="pl-md-5">
+      <label class="checkbox ml-md-2">
+        <input type="checkbox" name="agreement" class="agreement" checked>
+        <span class="checkbox__area"></span>
+        Я согласен(а) с&nbsp;условиями пользовательского соглашения и&nbsp;политики обработки персональных данных
+      </label>
+    </div>
+    <div class="text-center mt-4">
+      <input type="submit" class="btn btn-primary cta-form__btn" value="Получить ответы на&nbsp;вопросы">
+    </div>
+  </form>
+</div>

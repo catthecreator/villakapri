@@ -1,0 +1,172 @@
+1635756854a:1:{s:11:"scripts.htm";a:6:{s:8:"fileName";s:11:"scripts.htm";s:7:"content";s:3429:"==
+<script>
+  $('form').on('submit', function (e) {
+    var form = $($(this)[0]);
+    var $phone = form.find(".phone");
+    var agreement = form.find('.agreement').prop('checked');
+    var digits = $phone.val().replace(/\D+/g, "");
+    if (digits.length < 6) {
+      $phone.css('border', '2px solid red');
+      alert("Пожалуйста, введите корректный номер телефона!");
+      e.preventDefault();
+      return false;
+    }
+
+    if (!agreement) {
+      alert('Необходимо согласие с условиями пользовательского соглашения и политикой обработки персональных данных ');
+      e.preventDefault();
+      return false;
+
+    }
+
+    $("#loadingModal").modal();
+    $("#ctaModal").modal('hide');
+    //var loading = $.fancybox.open('<div class="fancybox-loading" style="overflow:hidden;"></div>');
+    //$.fancybox.showLoading();
+    var name = $(this).find('.form-name').val();
+    var fio = $(this).find('.fio').val();
+    var email = $(this).find('.email').val();
+    //  var form = $($(this)[0]);
+    var dataForm = new FormData(this);
+    dataForm.append('web_form_submit', 'Y');
+    var phone = $phone.val();
+    $.request("onBitrix24LeadSend", {
+      data: {
+        phone: phone,
+        title: name,
+        name: fio,
+        email: email,
+      },
+      success: function (data) {
+        //loading.close();
+        $("#loadingModal").modal('hide');
+        ym(67176004,'reachGoal','lead');
+        gtag('event','lead',{'event_category':'submit'})
+        alert("Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время!");
+        // $.fancybox.open('Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время!')
+        //ym(<?=getYandexMetrikaCounterId()?>, 'reachGoal', 'bottom_form');
+      }
+    });
+    // $.ajax({
+    //   url: '/ajax/ajax.php',
+    //   type: 'POST',
+    //   data: {
+    //     tel: phone,
+    //     title: name,
+    //     name: fio,
+    //     email: email,
+    //   },
+    //   success: function (data) {
+    //     //loading.close();
+    //     $("#loadingModal").modal('hide');
+    //     $.fancybox.open('Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время!')
+    //     //ym(<?=getYandexMetrikaCounterId()?>, 'reachGoal', 'bottom_form');
+    //   }
+    // });
+    //getForm(name, dataForm, 'static');
+    e.preventDefault();
+    return false;
+  })
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(67176004, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        // defer:true,
+      });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/67176004" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->";s:5:"mtime";i:1601982109;s:6:"markup";s:3425:"<script>
+  $('form').on('submit', function (e) {
+    var form = $($(this)[0]);
+    var $phone = form.find(".phone");
+    var agreement = form.find('.agreement').prop('checked');
+    var digits = $phone.val().replace(/\D+/g, "");
+    if (digits.length < 6) {
+      $phone.css('border', '2px solid red');
+      alert("Пожалуйста, введите корректный номер телефона!");
+      e.preventDefault();
+      return false;
+    }
+
+    if (!agreement) {
+      alert('Необходимо согласие с условиями пользовательского соглашения и политикой обработки персональных данных ');
+      e.preventDefault();
+      return false;
+
+    }
+
+    $("#loadingModal").modal();
+    $("#ctaModal").modal('hide');
+    //var loading = $.fancybox.open('<div class="fancybox-loading" style="overflow:hidden;"></div>');
+    //$.fancybox.showLoading();
+    var name = $(this).find('.form-name').val();
+    var fio = $(this).find('.fio').val();
+    var email = $(this).find('.email').val();
+    //  var form = $($(this)[0]);
+    var dataForm = new FormData(this);
+    dataForm.append('web_form_submit', 'Y');
+    var phone = $phone.val();
+    $.request("onBitrix24LeadSend", {
+      data: {
+        phone: phone,
+        title: name,
+        name: fio,
+        email: email,
+      },
+      success: function (data) {
+        //loading.close();
+        $("#loadingModal").modal('hide');
+        ym(67176004,'reachGoal','lead');
+        gtag('event','lead',{'event_category':'submit'})
+        alert("Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время!");
+        // $.fancybox.open('Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время!')
+        //ym(<?=getYandexMetrikaCounterId()?>, 'reachGoal', 'bottom_form');
+      }
+    });
+    // $.ajax({
+    //   url: '/ajax/ajax.php',
+    //   type: 'POST',
+    //   data: {
+    //     tel: phone,
+    //     title: name,
+    //     name: fio,
+    //     email: email,
+    //   },
+    //   success: function (data) {
+    //     //loading.close();
+    //     $("#loadingModal").modal('hide');
+    //     $.fancybox.open('Спасибо за обращение! Наш менеджер свяжется с вами в ближайшее время!')
+    //     //ym(<?=getYandexMetrikaCounterId()?>, 'reachGoal', 'bottom_form');
+    //   }
+    // });
+    //getForm(name, dataForm, 'static');
+    e.preventDefault();
+    return false;
+  })
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(67176004, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        // defer:true,
+      });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/67176004" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

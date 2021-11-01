@@ -1,0 +1,7 @@
+1.0.1: First version of WebpackPhpManifest
+2.0.0: !!! Switched to using json manifest and added caching
+2.0.1: Added rel="preload" attribute
+2.0.2: Added rel="preload" and "as" attribute
+2.0.3: rolled back
+2.0.4: rolled back
+2.0.5: rolled back

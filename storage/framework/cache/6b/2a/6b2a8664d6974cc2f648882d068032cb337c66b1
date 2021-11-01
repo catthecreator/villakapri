@@ -1,0 +1,112 @@
+1635756854a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2427:"[webpackAssets]
+publicFolder = "public"
+assetsFolder = "assets"
+manifestFilename = "manifest.json"
+
+[LeadForm]
+==
+{% set phone="123" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+  <base href="{{ url('/') }}/assets/">
+  <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,900;1,700&display=swap">
+  {{webpackAssets.tag ('main.css') | raw}}
+  {{webpackAssets.tag ('vendors~main.css') | raw}}
+  {% styles %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178390383-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178390383-1');
+</script>
+<script src="//code-ya.jivosite.com/widget/rXJ9TguozX" async></script>
+</head>
+<body>
+  {% partial 'navbar' %}
+  {% page %}
+  {% partial 'footer' %}
+  {% partial 'modal' %}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js-lib/owl/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+          crossorigin="anonymous"></script>
+
+  {% partial 'scripts' %}
+  {% framework extras %}
+  {% scripts %}
+  {{webpackAssets.tag ('main.js') | raw}}
+  {{webpackAssets.tag ('vendors~main.js') | raw}}
+</body>
+</html>";s:5:"mtime";i:1629794394;s:6:"markup";s:2313:"{% set phone="123" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+  <base href="{{ url('/') }}/assets/">
+  <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,900;1,700&display=swap">
+  {{webpackAssets.tag ('main.css') | raw}}
+  {{webpackAssets.tag ('vendors~main.css') | raw}}
+  {% styles %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178390383-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178390383-1');
+</script>
+<script src="//code-ya.jivosite.com/widget/rXJ9TguozX" async></script>
+</head>
+<body>
+  {% partial 'navbar' %}
+  {% page %}
+  {% partial 'footer' %}
+  {% partial 'modal' %}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js-lib/owl/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+          crossorigin="anonymous"></script>
+
+  {% partial 'scripts' %}
+  {% framework extras %}
+  {% scripts %}
+  {{webpackAssets.tag ('main.js') | raw}}
+  {{webpackAssets.tag ('vendors~main.js') | raw}}
+</body>
+</html>";s:4:"code";N;s:13:"webpackAssets";a:3:{s:12:"publicFolder";s:6:"public";s:12:"assetsFolder";s:6:"assets";s:16:"manifestFilename";s:13:"manifest.json";}s:8:"LeadForm";a:0:{}}}

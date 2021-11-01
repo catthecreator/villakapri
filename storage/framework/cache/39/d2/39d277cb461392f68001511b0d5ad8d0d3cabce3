@@ -1,0 +1,134 @@
+1635756854a:1:{s:17:"house_gallery.htm";a:6:{s:8:"fileName";s:17:"house_gallery.htm";s:7:"content";s:2717:"[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ category }}"
+postsPerPage = 10
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "post"
+==
+{% set posts = blogPosts.posts %}
+
+<div class="owl-carousel owl-theme house__carousel">
+  {% for post in posts %}
+
+  {% set img = post.featured_images[0].path %}
+  {% if img %}
+  <div class="house__card">
+    <div class="house__card-inner">
+      <div class="row">
+        <div class="col-lg-7 order-lg-2">
+          <a href="{{ post.url }}"><img data-src="{{img}}" alt="" class="lazy house__img img-fluid"></a>
+        </div>
+        <div class="col-lg-5 order-lg-1">
+          <div class="p-4">
+            <div class="house__title h h_primary">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+
+            <div class="row">
+
+              {% if post.house_area %}
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="row house__trigger-row">
+                  <div class="col-3 col-sm-4 col-md-3 d-flex"><img data-src="img/ploshad.svg" alt=""
+                                                                   class="lazy img-fluid house__trigger-img">
+                  </div>
+                  <div class="col house__trigger-text">
+                    Площадь
+                    <div class="house__digit">{{ post.house_area }} кв. м</div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+
+              {% if post.plottage %}
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="row house__trigger-row">
+                  <div class="col-3 col-sm-4 col-md-3 d-flex"><img data-src="img/list.svg" alt=""
+                                                                   class="lazy img-fluid house__trigger-img">
+                  </div>
+                  <div class="col house__trigger-text">
+                    Участок
+                    <div class="house__digit">{{post.plottage}} сот.</div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            </div>
+            <div class="row house__trigger-row">
+              <div class="col-12">
+                {# <a href="{{ post.url }}" class="btn btn-primary btn-block house__btn">ПОДРОБНЕЕ</a> #}
+                <a data-toggle="modal" data-target="#ctaModal" class="btn btn-primary btn-block">УЗНАТЬ ЦЕНУ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>";s:5:"mtime";i:1608535227;s:6:"markup";s:2497:"{% set posts = blogPosts.posts %}
+
+<div class="owl-carousel owl-theme house__carousel">
+  {% for post in posts %}
+
+  {% set img = post.featured_images[0].path %}
+  {% if img %}
+  <div class="house__card">
+    <div class="house__card-inner">
+      <div class="row">
+        <div class="col-lg-7 order-lg-2">
+          <a href="{{ post.url }}"><img data-src="{{img}}" alt="" class="lazy house__img img-fluid"></a>
+        </div>
+        <div class="col-lg-5 order-lg-1">
+          <div class="p-4">
+            <div class="house__title h h_primary">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+
+            <div class="row">
+
+              {% if post.house_area %}
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="row house__trigger-row">
+                  <div class="col-3 col-sm-4 col-md-3 d-flex"><img data-src="img/ploshad.svg" alt=""
+                                                                   class="lazy img-fluid house__trigger-img">
+                  </div>
+                  <div class="col house__trigger-text">
+                    Площадь
+                    <div class="house__digit">{{ post.house_area }} кв. м</div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+
+              {% if post.plottage %}
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="row house__trigger-row">
+                  <div class="col-3 col-sm-4 col-md-3 d-flex"><img data-src="img/list.svg" alt=""
+                                                                   class="lazy img-fluid house__trigger-img">
+                  </div>
+                  <div class="col house__trigger-text">
+                    Участок
+                    <div class="house__digit">{{post.plottage}} сот.</div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            </div>
+            <div class="row house__trigger-row">
+              <div class="col-12">
+                {# <a href="{{ post.url }}" class="btn btn-primary btn-block house__btn">ПОДРОБНЕЕ</a> #}
+                <a data-toggle="modal" data-target="#ctaModal" class="btn btn-primary btn-block">УЗНАТЬ ЦЕНУ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>";s:4:"code";N;s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:14:"{{ category }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:34:"Записей не найдено";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:4:"home";s:8:"postPage";s:4:"post";}}}

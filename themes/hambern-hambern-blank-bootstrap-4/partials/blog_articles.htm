@@ -1,0 +1,20 @@
+[blogPosts blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+categoryFilter = "{{ category }}"
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "post"
+==
+{% set posts = blogPosts.posts %}
+
+{{ d(posts) }}
+
+<div class="blog__articles">
+  {% for post in posts %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p>{{ post.excerpt }}</p>
+  <hr>
+  {% endfor %}
+</div>

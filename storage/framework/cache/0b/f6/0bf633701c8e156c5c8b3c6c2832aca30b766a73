@@ -1,0 +1,91 @@
+1635756854a:1:{s:10:"navbar.htm";a:6:{s:8:"fileName";s:10:"navbar.htm";s:7:"content";s:2093:"description = "Navigation bar"
+==
+{% if this.page.baseFileName == 'home' %}
+<nav class="fullscreen" id="mobileNav">
+	<div>
+		<div class="hamburger hamburger--collapse is-active top-panel__hamburger pt-3 mt-2" data-fullscreen type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+		</div>
+	</div>
+	<menu class="fullscreen__menu">
+		<li><a href="#preimushestva" class="fullscreen__menu-link">Преимущества</a></li>
+		<li><a href="#katalog" class="fullscreen__menu-link">Каталог</a></li>
+		<li><a href="#gallery" class="fullscreen__menu-link">Галерея</a></li>
+		<li><a href="#about" class="fullscreen__menu-link">О застройщике</a></li>
+		<li><a href="#progress" class="fullscreen__menu-link">Ход строительства</a></li>
+		<li><a href="#contacts" class="fullscreen__menu-link">Контакты</a></li>
+	</menu>
+</nav>
+{% endif %}
+<div class="top-panel">
+	<div class="container">
+		<div class="row">
+			<div class="col-3 d-flex d-md-none">
+				<!--          <img src="img/open-menu.svg" class="img-fluid top-panel__hamburger" alt="">-->
+				{% if this.page.baseFileName == 'home' %}
+				<div class="hamburger hamburger--collapse is-active1 top-panel__hamburger pt-3 mt-2"
+						 data-fullscreen="#mobileNav" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+				</div>
+				{% endif %}
+			</div>
+			<div class="col order-md-2 d-_flex d-md-block">
+				<div>
+					<a class="top-panel__phone" href="tel:{{ utmTracker("defaultPhone") }}">{{ utmTracker("defaultPhone") }}</a>
+				</div>
+				<a href="#" class="btn btn-primary btn-block top-panel__cta-button" data-toggle="modal" data-target="#ctaModal">Заказать звонок</a>
+			</div>
+			<div class="col-3 col-xl-9 col-md-7 col-lg-8 order-md-1 d-flex">
+				<a href="/"><img data-src="img/logo/logo_vilka.svg" alt="" class="lazy img-fluid top-panel__logo"></a>
+			</div>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1607942207;s:6:"markup";s:2059:"{% if this.page.baseFileName == 'home' %}
+<nav class="fullscreen" id="mobileNav">
+	<div>
+		<div class="hamburger hamburger--collapse is-active top-panel__hamburger pt-3 mt-2" data-fullscreen type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+		</div>
+	</div>
+	<menu class="fullscreen__menu">
+		<li><a href="#preimushestva" class="fullscreen__menu-link">Преимущества</a></li>
+		<li><a href="#katalog" class="fullscreen__menu-link">Каталог</a></li>
+		<li><a href="#gallery" class="fullscreen__menu-link">Галерея</a></li>
+		<li><a href="#about" class="fullscreen__menu-link">О застройщике</a></li>
+		<li><a href="#progress" class="fullscreen__menu-link">Ход строительства</a></li>
+		<li><a href="#contacts" class="fullscreen__menu-link">Контакты</a></li>
+	</menu>
+</nav>
+{% endif %}
+<div class="top-panel">
+	<div class="container">
+		<div class="row">
+			<div class="col-3 d-flex d-md-none">
+				<!--          <img src="img/open-menu.svg" class="img-fluid top-panel__hamburger" alt="">-->
+				{% if this.page.baseFileName == 'home' %}
+				<div class="hamburger hamburger--collapse is-active1 top-panel__hamburger pt-3 mt-2"
+						 data-fullscreen="#mobileNav" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+				</div>
+				{% endif %}
+			</div>
+			<div class="col order-md-2 d-_flex d-md-block">
+				<div>
+					<a class="top-panel__phone" href="tel:{{ utmTracker("defaultPhone") }}">{{ utmTracker("defaultPhone") }}</a>
+				</div>
+				<a href="#" class="btn btn-primary btn-block top-panel__cta-button" data-toggle="modal" data-target="#ctaModal">Заказать звонок</a>
+			</div>
+			<div class="col-3 col-xl-9 col-md-7 col-lg-8 order-md-1 d-flex">
+				<a href="/"><img data-src="img/logo/logo_vilka.svg" alt="" class="lazy img-fluid top-panel__logo"></a>
+			</div>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:11:"description";s:14:"Navigation bar";}}

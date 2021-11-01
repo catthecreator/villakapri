@@ -1,0 +1,68 @@
+1635756854a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2294:"==
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 order-md-2">
+        <div class="row">
+          <div class="col-6">
+            <img data-src="img/logo/tr.svg" alt="" class="lazy img-fluid">
+          </div>
+          <div class="col-6 footer__social">
+            <a href="https://instagram.com/villa_kapri" target="_blank"><img data-src="img/logo/instagram.svg" alt="" class="lazy img-fluid footer__social-icon"></a>
+            <a href="https://www.facebook.com/villa.kapri.26" target="_blank"><img data-src="img/logo/facebook.svg" alt="" class="lazy img-fluid footer__social-icon"></a>
+            <a href="https://vk.com/villa.kapri" target="_blank"><img data-src="img/logo/vk.svg" alt="" class="lazy img-fluid footer__social-icon"></a>
+          </div>
+          <div class="col-12 col-xl-6 offset-xl-6 footer__privacy py-4 py-md-0">
+            <a target="_blank" href="/politika-konfidencialnosti">Политика конфиденциальности</a><br>
+            <a target="_blank" href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="footer__info">
+          Ставропольский край, г. Михайловск. Коммерческое обозначение утверждено
+          постановлением Администрации г. Михайловска № 1118 от 09.07.2020 г.
+          Проектная документация № 03-04/440-ОПЗ, 03-04/440 ПМ. Правообладатель:
+          ИП Шинкаренко Роман Викторович ИНН 262302388838 ОГРНИП 320265100051230.
+          Земельные участки с КН: 26:11:021001:265, 26:11:021001:271, 26:11:021001:278
+          на праве аренды по договорам № 24 от 17.12.2012, 29 от 17.12.2012, 34 от 17.12.2012.
+          © 2020 Строительная группа «Третий Рим». При использовании информации
+          ссылка на сайт обязательна
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>";s:5:"mtime";i:1618394733;s:6:"markup";s:2291:"<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 order-md-2">
+        <div class="row">
+          <div class="col-6">
+            <img data-src="img/logo/tr.svg" alt="" class="lazy img-fluid">
+          </div>
+          <div class="col-6 footer__social">
+            <a href="https://instagram.com/villa_kapri" target="_blank"><img data-src="img/logo/instagram.svg" alt="" class="lazy img-fluid footer__social-icon"></a>
+            <a href="https://www.facebook.com/villa.kapri.26" target="_blank"><img data-src="img/logo/facebook.svg" alt="" class="lazy img-fluid footer__social-icon"></a>
+            <a href="https://vk.com/villa.kapri" target="_blank"><img data-src="img/logo/vk.svg" alt="" class="lazy img-fluid footer__social-icon"></a>
+          </div>
+          <div class="col-12 col-xl-6 offset-xl-6 footer__privacy py-4 py-md-0">
+            <a target="_blank" href="/politika-konfidencialnosti">Политика конфиденциальности</a><br>
+            <a target="_blank" href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="footer__info">
+          Ставропольский край, г. Михайловск. Коммерческое обозначение утверждено
+          постановлением Администрации г. Михайловска № 1118 от 09.07.2020 г.
+          Проектная документация № 03-04/440-ОПЗ, 03-04/440 ПМ. Правообладатель:
+          ИП Шинкаренко Роман Викторович ИНН 262302388838 ОГРНИП 320265100051230.
+          Земельные участки с КН: 26:11:021001:265, 26:11:021001:271, 26:11:021001:278
+          на праве аренды по договорам № 24 от 17.12.2012, 29 от 17.12.2012, 34 от 17.12.2012.
+          © 2020 Строительная группа «Третий Рим». При использовании информации
+          ссылка на сайт обязательна
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}
